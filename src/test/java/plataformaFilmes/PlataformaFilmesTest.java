@@ -18,7 +18,6 @@ public class PlataformaFilmesTest {
 
     @BeforeAll
     public static void validarLoginMap() {
-        RestUtils.setBaseURI("http://localhost:8080/");
         LoginMap.initLogin();
 
         RestUtils.post(LoginMap.getLogin(), ContentType.JSON, "auth");
